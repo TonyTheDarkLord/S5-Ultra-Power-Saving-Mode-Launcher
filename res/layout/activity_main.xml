@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/touchhome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/spacelin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/include1"
+            android:layout_weight="1.0"
+            android:maxLines="3"
+            android:minLines="3"
+            android:scrollbars="vertical"
+            android:text="@string/touchwiz_help"
+            android:textSize="17.0dip" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/spacelin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="30dp"
+        android:numColumns="2"
+        android:gravity="center_horizontal|center"
+        android:horizontalSpacing="30.0dip"
+        android:listSelector="#00000000"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2.0dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imga2"
+        android:background="@drawable/bottom_panel" >
+
+        <com.spacewizz.powersavelauncher.SpaceClock
+            android:id="@+id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="34.0dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imga2"
+        android:layout_width="1.0dip"
+        android:layout_height="70.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#50ffffff" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="70.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imga2"
+        android:background="@drawable/bottom_panel" >
+
+        <com.spacewizz.powersavelauncher.BatteryImage
+            android:id="@+id/batteryimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27.0dip"
+            android:layout_marginTop="23.0dip"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/tv_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="15.0dip"
+            android:layout_toRightOf="@+id/batteryimage"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="35.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_marginLeft="27dp"
+        android:textColor="#ffffffff"
+        android:text="@string/main_battery" />
+
+</RelativeLayout>

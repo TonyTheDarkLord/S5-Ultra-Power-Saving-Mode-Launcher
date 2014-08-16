@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spacewizz.powersavelauncher"
+    android:versionCode="5"
+    android:versionName="5.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="20" />
+
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>	
+	<uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />    
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />  	
+  	<uses-permission android:name="android.permission.WAKE_LOCK" />
+  	    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name2"
+        android:theme="@style/SpaceTheme" >
+        <activity
+            android:configChanges="keyboardHidden|screenSize"
+            android:name="com.spacewizz.powersavelauncher.MainActivity"            
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"  
+			android:stateNotNeeded="true" 
+			android:excludeFromRecents="true" 
+			android:launchMode="singleTask"
+            android:theme="@style/SpaceTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />                
+                <action android:name="android.intent.action.ACTION_CONFIGURATION_CHANGED" />
+                <action android:name="android.intent.action.ACTION_LOCALE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_TIMEZONE_CHANGED" /> 
+				<action android:name="android.intent.action.PACKAGE_ADDED"/>  
+     			<action android:name="android.intent.action.PACKAGE_REMOVED"/>
+     			<data android:scheme="package"/>                                
+            </intent-filter>
+        </activity> 
+        <activity
+            android:icon="@drawable/ic_launcher"
+            android:name="com.spacewizz.powersavelauncher.LauncherSettings"
+            android:label="@string/launcher_settings_menu"
+            android:theme="@style/SpaceThemeS5orig" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:icon="@drawable/ic_launcher"
+            android:name="com.spacewizz.powersavelauncher.PowerSavingSettings"
+            android:label="@string/powersaving_menu"
+            android:theme="@style/SpaceThemeS5orig" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>  		
+    </application>
+
+</manifest>

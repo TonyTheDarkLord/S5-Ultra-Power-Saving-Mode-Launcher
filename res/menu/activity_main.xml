@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item 
+    android:id="@+id/more" 
+    android:showAsAction="always" 
+    android:icon="@drawable/selector_settings" 
+    android:title="@string/more_menu">
+<menu>		
+<item
+	android:id="@+id/PowerSaverButton"
+	android:showAsAction="never"
+	android:title="@string/powersaving_menu"/>
+<item
+	android:id="@+id/LauncherSettingsButton"
+	android:showAsAction="never"
+	android:title="@string/launcher_settings_menu"/>
+<item
+	android:id="@+id/SettingsButton"
+	android:showAsAction="never"
+	android:title="@string/settings_menu"/>	   
+</menu>
+</item>
+</menu>   
+    

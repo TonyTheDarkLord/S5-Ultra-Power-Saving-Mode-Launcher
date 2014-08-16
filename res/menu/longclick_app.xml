@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/s5launcher_uninstall_item" android:title="@string/uninstall_s5_app" />
+    <item android:id="@+id/s5launcher_info_item" android:title="@string/info_s5_app" />
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string-array name="pref_Theme_Entries">
+ <item>@string/array_normal</item>
+ <item>@string/array_light</item>
+ <item>@string/array_samsungs5</item>
+ <item>@string/array_red</item>
+ <item>@string/array_orange</item>
+ <item>@string/array_fullscreen</item>
+ </string-array>
+ <string-array name="pref_Grid_Entries">
+ <item>1</item>
+ <item>2</item>
+ <item>3</item>
+ </string-array>
+
+ <string-array name="pref_Theme_Values">
+ <item>Normal</item>
+ <item>Light</item>
+ <item>Samsung</item>
+ <item>Red</item>
+ <item>Orange</item>
+ <item>FullScreen</item>
+ </string-array>
+ <string-array name="pref_Grid_Values">
+ <item>1</item>
+ <item>2</item>
+ <item>3</item>
+ </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   	<PreferenceCategory android:key="mpowersaver" android:title="PowerSaving">            
+    	<CheckBoxPreference
+        android:title="PowerSaver On"
+        android:summary="Enable Power Saver or Disable Power Saver"
+        android:key="poweronoffPref" />	
+	</PreferenceCategory>              
+   	<PreferenceCategory android:key="mgen" android:title="@string/general_launcher_cat">            
+    	<ListPreference
+			android:key="pref_Theme"
+			android:title="@string/settings_theme"
+			android:dialogTitle="@string/settings_theme"
+			android:entries="@array/pref_Theme_Entries"
+			android:entryValues="@array/pref_Theme_Values"
+			android:defaultValue="Normal" 
+			android:summary="@string/settings_theme_summary"/>
+	</PreferenceCategory>    	
+	<PreferenceCategory android:key="mgen" android:title="@string/homescreen_cat">
+    	<ListPreference
+			android:key="pref_Grid"
+			android:title="@string/grid_size_settings"
+			android:dialogTitle="@string/grid_size_settings_dialog"
+			android:entries="@array/pref_Grid_Entries"
+			android:entryValues="@array/pref_Grid_Values"
+			android:defaultValue="1" 
+			android:summary="@string/grid_size_settings_summary"/>	    	
+	</PreferenceCategory>
+	<PreferenceCategory android:key="mgen" android:title="@string/about_cat">	
+	    <Preference android:title="About Developer" android:key="abouts" />
+	</PreferenceCategory>			    
+</PreferenceScreen>
